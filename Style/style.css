@@ -135,24 +135,28 @@ ul {
   max-width: 720px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .banner-img > img {
-  padding-left: 200px;
+  padding-left: 13.5em;
 }
 .E-commerce {
-  max-width: 300px;
+  max-width: 1440px;
   height: 100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   /* grid-gap: 90px; */
   align-items: center;
-  /* border-top: 2px solid rgb(58, 58, 58, 0.1);
-  border-bottom: 2px solid rgb(58, 58, 58, 0.1); */
+  border-top: 2px solid rgb(58, 58, 58, 0.1);
+  border-bottom: 2px solid rgb(58, 58, 58, 0.1);
+}
+.E-commerce > img {
+  max-width: 100px;
 }
 .populer-collection-container {
   max-width: 1100px;
@@ -295,6 +299,11 @@ ul {
     display: none;
   }
 }
+@media screen and (max-width: 1400px) {
+  .banner-img > img {
+    padding-left: 0;
+  }
+}
 @media screen and (max-width: 576px) {
   .nav {
     display: none;
@@ -352,12 +361,12 @@ ul {
     margin: 0 auto;
   }
   .E-commerce {
-    grid-template-columns: repeat(auto, 55px);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
     height: 200px;
   }
   .E-commerce > img {
-    width: 55px;
+    max-width: 55px;
   }
   .box-container {
     grid-template-columns: repeat(1, 1fr);
