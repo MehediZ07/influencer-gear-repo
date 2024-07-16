@@ -92,7 +92,7 @@ ul {
 .populer-collection-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 .populer-collection-text {
   display: flex;
@@ -136,4 +136,86 @@ ul {
 .rating span {
   font-size: 24px;
   color: gold;
+}
+.feature-product {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 70px;
+  margin-bottom: 100px;
+}
+.feature-product > h1 {
+  color: rgb(10, 8, 38);
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 30px;
+}
+.feature-product > p {
+  color: rgb(108, 108, 108);
+  padding-right: 7rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 10px;
+}
+.feature-product > button {
+  margin-top: 10px;
+  width: 130px;
+  height: 44px;
+  padding: 10px 24px 10px 24px;
+  border-radius: 2px;
+  background: rgb(224, 44, 109);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+.feature-product > img {
+  float: left;
+  padding-right: 70px;
+}
+.footer-container {
+  width: 100%;
+  background-color: rgb(10, 8, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer-container > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 50px;
+}
+.footer-container > p {
+  width: 262px;
+  color: rgb(217, 219, 225);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-top: 20px;
+}
+
+.footer-container > .icon {
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.icon box-icon {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 576px) {
 }
