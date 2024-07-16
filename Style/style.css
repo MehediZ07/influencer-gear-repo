@@ -23,15 +23,74 @@ ul {
   display: flex;
 }
 
+/* mobile nav bar view  start */
+.navbar {
+  position: relative;
+  padding: 30px;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.nav-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: whitesmoke;
+  width: 50%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.nav-content a {
+  display: block;
+  color: #575757;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.nav-content a:hover {
+  background-color: white;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-checkbox:checked ~ .nav-content {
+  display: block;
+}
+.nav-bar-mobile-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar-mobile-container > h1 {
+  color: rgb(58, 58, 58);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+/* mobile nav bar view end */
+
 .banner-container {
   display: flex;
   padding-top: 80px;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
 .banner-content {
-  width: 50%;
+  max-width: 720px;
 }
 .banner-content > h1 {
   color: rgb(58, 58, 58);
@@ -68,12 +127,15 @@ ul {
 }
 
 .banner-img {
-  width: 50%;
+  max-width: 720px;
   display: flex;
   justify-content: center;
   background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-position: right;
+}
+.banner-img > img {
+  padding-left: 10px;
 }
 .banner-img > img {
   padding-left: 200px;
@@ -115,6 +177,7 @@ ul {
 }
 
 .box {
+  max-width: 330px;
   border: 1px solid #ddd;
   padding: 1rem 1rem 2rem 1rem;
   text-align: start;
@@ -217,5 +280,74 @@ ul {
   background-color: aliceblue;
 }
 
+@media screen and (min-width: 576px) {
+  .nav-mobile {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
+  .nav {
+    display: none;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+  }
+  .banner-content {
+    /* width: 100%; */
+  }
+  .banner-content > img {
+    max-width: 202px;
+    max-height: 190px;
+    padding: 10px;
+  }
+
+  .feature-product-container > img {
+    float: none;
+    padding-right: 70px;
+  }
+  .feature-product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-img {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px 202px;
+    margin-right: 200px;
+  }
+  .banner-img > img {
+    width: 100%;
+    height: 100%;
+    margin-right: 200px;
+  }
+
+  .E-commerce {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    height: 200px;
+  }
+  .E-commerce > img {
+    width: 55px;
+  }
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
